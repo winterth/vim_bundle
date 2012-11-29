@@ -2,7 +2,7 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-call pathogen#infect()
+call pathogen#infect('~/vim_bundle')
 
 """"""""""""""""""""""""""""  GVIM  """"""""""""""""""""""""""""""
 if has("gui_running")
