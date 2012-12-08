@@ -189,3 +189,5 @@ cs a $LW_PROJ_DIR/cscope.out
 "	cs add cscope.out
 "endif
 
+" for vimwiki
+let g:vimwiki_list = [ {'path': '~/vimwiki/wiki', 'path_html': '~/vimwiki_html/wiki'}, {'path': '~/vimwiki/blog', 'path_html': '~/vimwiki_html/blog'}]
