@@ -3,6 +3,9 @@
 set nocompatible
 
 call pathogen#infect('~/vim_bundle')
+if filereadable("~/my.vim")
+	source ~/my.vim
+endif
 
 """"""""""""""""""""""""""""  GVIM  """"""""""""""""""""""""""""""
 if has("gui_running")
@@ -190,4 +193,4 @@ cs a $LW_PROJ_DIR/cscope.out
 "endif
 
 " for vimwiki
-let g:vimwiki_list = [ {'path': '~/vimwiki/wiki', 'path_html': '~/vimwiki_html/wiki'}, {'path': '~/vimwiki/blog', 'path_html': '~/vimwiki_html/blog'}]
+" let g:vimwiki_list = [ {'path': '~/vimwiki/wiki', 'path_html': '~/vimwiki_html/wiki'}, {'path': '~/vimwiki/blog', 'path_html': '~/vimwiki_html/blog'}]
