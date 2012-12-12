@@ -3,7 +3,7 @@
 set nocompatible
 
 call pathogen#infect('~/vim_bundle')
-if filereadable("my.vim")
+if filereadable(expand("~/my.vim"))
 	source ~/my.vim
 endif
 
