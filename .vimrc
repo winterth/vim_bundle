@@ -91,7 +91,7 @@ fu! SwitchCusorStatus()
     endif
 endf
 call MapCusor()
-imap <F7> :call SwitchCusorStatus()<CR>
+imap <F7> <ESC>:call SwitchCusorStatus()<CR>a
 nmap <F7> :call SwitchCusorStatus()<CR>
 vmap <F7> :call SwitchCusorStatus()<CR>
 
