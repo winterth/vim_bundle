@@ -39,6 +39,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Map for scroll the screen
+map <C-S-j> <C-Y>
+map <C-S-k> <C-E>
+
 " Edit vimrc
 if has("unix")
         map <leader>e :e! ~/.vimrc<CR>
