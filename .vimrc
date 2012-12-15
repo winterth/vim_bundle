@@ -43,6 +43,13 @@ map <C-l> <C-W>l
 map <C-S-j> <C-Y>
 map <C-S-k> <C-E>
 
+" Insert current date
+map <leader>d "=strftime("%F")<CR>p
+ 
+" Vimwiki's TODO list
+map <leader>td <Plug>VimwikiToggleListItem
+let g:vimwiki_hl_cb_checked=1
+
 " Edit vimrc
 if has("unix")
         map <leader>e :e! ~/.vimrc<CR>
