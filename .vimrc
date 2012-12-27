@@ -41,6 +41,9 @@ map <C-l> <C-W>l
 
 " Insert current date
 map <leader>d "=strftime("%F")<CR>p
+
+" Count the number of word under the cusor
+map <leader>wc :%s/\(<C-R><C-W>\)/\1/g<CR><C-O>u<C-O>
  
 " Vimwiki's TODO list
 map <leader>td <Plug>VimwikiToggleListItem
@@ -188,6 +191,9 @@ nnoremap <leader>as :RgrepAdd<CR>
 nnoremap <leader>bs :Bgrep<CR>
 nnoremap <leader>bas :BgrepAdd<CR>
 let Grep_Default_Filelist = '*.c *.h *.cli' 
+
+" Search the word under the cusor and list in Quickfix
+map <leader>fs :vimgrep /<C-R><C-W>/ %<CR>:copen<CR><C-W><C-K><C-O><C-W><C-J>
 
 set nocscopeverbose
 set tags=$LW_PROJ_DIR/tags
