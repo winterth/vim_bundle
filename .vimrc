@@ -199,6 +199,7 @@ set nocscopeverbose
 set tags=$LW_PROJ_DIR/tags
 cs a $LW_PROJ_DIR/cscope.out
 
+set directory=~/tmp,/tmp
 "set csto=1
 "set cst
 "if filereadable("cscope.out")
